@@ -1,64 +1,16 @@
-Mini HTTP Server in C++
+# fichier compilé
+server
 
-A simple educational HTTP server built in C++ using TCP sockets.
-This project was created to learn low-level networking, HTTP basics, and clean C++ project structure.
+# fichiers objets
+*.o
 
-Features
+# fichiers temporaires
+*.out
 
-    TCP socket server
-    Runs on localhost:8080
-    Handles HTTP GET requests
-    Parses HTTP request line
+# dossiers système
+.DS_Store
+Thumbs.db
 
-    Simple routing :
-        / → home page
-        /about → about page
-        /time → current server time
-    Returns proper HTTP responses
-    Handles 404 Not Found
-    Serves static HTML files
-
-Tech Stack :
-    C++
-    TCP sockets
-    Linux / macOS compatible
-    Makefile build system
-
-Project Structure :
-    src/        # source files
-    include/    # header files
-    public/     # static HTML files
-    docs/       # extra documentation
-    Build
-    make
-    Run
-    ./server
-
-Then open:
-    http://localhost:8080
-
-Test with curl :
-    curl http://localhost:8080/
-    curl http://localhost:8080/about
-    curl http://localhost:8080/time
-    curl http://localhost:8080/unknown
-
-Learning Goals :
-
-    Understand TCP socket programming
-    Learn how HTTP requests and responses work
-    Practice modular C++ code organization
-    Work collaboratively with Git and GitHub
-
-Possible Improvements :
-    Support more HTTP methods
-    Better request parsing
-    MIME type detection
-    Serve CSS and JavaScript files
-    Add logging
-    Add unit tests
-    Handle multiple clients
-    Use threads or select()
-
-Authors
-    Built by Samu and Jordan
+# dossiers IDE
+.vscode/
+.idea/
