@@ -28,7 +28,7 @@ int main() {
 
     // 3) Lier la socket au port
     if(bind(server_fd, (struct sockaddr*)&address, sizeof(address)) < 0) {
-        std::cerr << "Erreur lors du bind de la socket 2" << std::endl;
+        std::cerr << "Erreur lors du bind de la socket 2<< std::endl;
         close(server_fd);
         return 1;
     }
